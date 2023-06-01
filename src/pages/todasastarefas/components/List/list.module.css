@@ -1,0 +1,55 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1020px;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.text_complete {
+    color: #5A5A5A;
+    text-decoration: line-through;
+}
+
+.texto {
+    display: flex;
+    font-weight: 4500px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: auto;
+    color: #5A5A5A;
+    margin-left: 10px;
+}
+
+.checkbox {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #5967EA;
+    border-radius: 4px;
+}
+
+.delet {
+    background: none;
+    border: none;
+}
+
+.empty {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    color: #5A5A5A;
+    font-size: 18px;
+}

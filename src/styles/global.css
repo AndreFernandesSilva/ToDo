@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+  }
+  html, body, #root {
+    height: 100%;
+  }
+  html, body, #root {
+      height: 100%;
+  }
+  body {
+      -webkit-font-smoothing: antialiased;
+  }
+  [disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+  }
+
+.modal-content {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 10px;
+    padding: 30px;
+    max-height: 92vh;
+    min-height: 30vh;
+}
+
+.modal-overlay-right {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.modal-content-right {
+    background: #fff;
+    border-radius: 0px;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 10px;
+    padding: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e23737;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccaaaa;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
