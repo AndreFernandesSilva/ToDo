@@ -8,11 +8,11 @@ const Task = ({ task = {}, onComplete = () => { }, onRemoveTask = () => { } }) =
         <div className={styles.list}>
             <button
                 className={styles.checkbox}
-                onClick={() => onComplete(task.id)}>
+                onClick={() => onComplete(task.id, task.is_completed)}>
                 {task.is_completed ? <BsCheckSquare size={24} color='blue' /> : <div />}
             </button>
             <p className={`${styles.texto} ${task.is_completed ? styles.text_complete : ""}`}>
-                {task.title}
+                {task.description}
             </p>
             <button
                 className={styles.delet}>

@@ -2,17 +2,17 @@ import styles from "./header.module.css";
 import { useState } from "react"
 
 export function Header({ onAddNewTask = () => { } }) {
-    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("");
 
     function handleSubmit(e) {
         e.preventDefault(0);
 
-        onAddNewTask(title);
+        onAddNewTask(description);
 
-        setTitle('bugo')
+        setDescription("")
     }
     function onChangeTitle(e) {
-        setTitle(e.target.value);
+        setDescription(e.target.value);
     }
     return (
         <header className={styles.header}>
@@ -20,7 +20,7 @@ export function Header({ onAddNewTask = () => { } }) {
             <form className={styles.newTaskForm} onSubmit={handleSubmit}>
                 <input placeholder="Adicionar uma nova tarefa"
                     onChange={onChangeTitle}
-                    value={title}
+                    value={description}
                 />
             </form >
         </header>
